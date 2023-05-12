@@ -1,2 +1,15 @@
-h1
-    color: red
+@import "_reset.scss"
+@import "_normalize.scss"
+
+$main-color: #F28B64
+
+@mixin box
+    width: 400px
+    height: 400px
+    background-color: $main-color
+    
+    
+.block
+    @include box
+    &_text
+        color: black
