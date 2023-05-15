@@ -12,9 +12,11 @@ $color-orange: #F07835
     margin: 0 auto
 
 .main-section
+    position: relative
     height: 800px
     background: #DFDFDF
     padding-top: 18px 
+    overflow: hidden
 
     &__nav-container
         display: flex
@@ -31,6 +33,17 @@ $color-orange: #F07835
         position: relative
         display: flex
         flex-direction: row
+
+    &__first-ellipse
+        position: absolute
+        top: 106px
+        right: -24px    
+
+    &__second-ellipse
+        position: absolute
+        top: 650px
+        right: -120px
+
 
 .nav-menu
     &__list
@@ -87,6 +100,7 @@ $color-orange: #F07835
     position: absolute
     top: 125px
     right: -10px
+    z-index: 1
     &__text
         font-size: 20px
         margin-bottom: 20px
@@ -98,11 +112,11 @@ $color-orange: #F07835
         display: flex
         justify-content: center
         align-items: center
-        width: 41px
-        height: 41px
+        width: 40px
+        height: 40px
         border: 1px solid #3443CA
         border-radius: 100px
-        margin-right: 17px
+        margin-right: 21px
         &:last-child
             margin-right: 0px
         i
@@ -139,3 +153,23 @@ $color-orange: #F07835
         align-items: center
         img
             margin-right: 11px
+
+.ellipse
+    display: flex
+    width: 210px
+    height: 210px
+    background: linear-gradient(144.71deg, rgba(66, 71, 187, 0.6) 14.55%, rgba(54, 40, 190, 0.579139) 19.04%, rgba(224, 81, 0, 0.384) 59.93%, rgba(191, 41, 41, 0.6) 86.44%)
+    border-radius: 150px
+    justify-content: center
+    align-items: center
+    &_big
+        width: 282px
+        height: 282px
+    &__subtract
+        width: 136.32px
+        height: 136.32px
+        border-radius: 150px
+        background: #DFDFDF
+        &_big
+            width: 183px
+            height: 183px
