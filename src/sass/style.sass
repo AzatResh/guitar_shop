@@ -4,8 +4,11 @@
 $color-blue: #615FDF
 $color-orange: #F07835
 
+
+
 *
     box-sizing: border-box
+
 
 .container
     max-width: 1140px
@@ -277,3 +280,16 @@ $color-orange: #F07835
         z-index: -1
         top: -120px
         right: -270px
+
+.footer
+    position: relative
+    &__container
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        overflow: hidden
+    &__img
+        position: absolute
+        left: 0px
+        bottom: -10px

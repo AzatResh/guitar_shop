@@ -789,4 +789,20 @@ table {
   z-index: -1;
   top: -120px;
   right: -270px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.footer__img {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
 }/*# sourceMappingURL=style.css.map */
