@@ -530,11 +530,16 @@ html {
   flex-direction: row;
 }
 .nav-menu__list-item {
+  font-weight: bold;
   margin-right: 70px;
   font-size: 18px;
 }
 .nav-menu__list-item:last-child {
   margin-right: 0;
+}
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
 }
 
 .left-wrapper {
@@ -649,6 +654,7 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 .buttons__icon-btn {
   display: flex;
@@ -734,6 +740,7 @@ html {
   background-color: #CBCBCB;
   display: flex;
   align-items: flex-end;
+  border-radius: 8px;
 }
 .cards-item__img {
   height: 335px;
@@ -763,6 +770,7 @@ html {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 .icons-item__img {
   width: 80px;
