@@ -4,11 +4,23 @@
 $color-blue: #615FDF
 $color-orange: #F07835
 
+@font-face 
+    font-family: "_Montserrat"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
 
+@font-face 
+    font-family: "_Montserrat"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
 
 *
     box-sizing: border-box
 
+html
+    font-family: "_Montserrat"
 
 .container
     max-width: 1140px
@@ -40,7 +52,7 @@ $color-orange: #F07835
     &__first-ellipse
         position: absolute
         top: 106px
-        right: -24px    
+        right: -36px    
 
     &__second-ellipse
         position: absolute
@@ -107,6 +119,8 @@ $color-orange: #F07835
     &__text
         font-size: 20px
         margin-bottom: 20px
+    &__icons_box
+        padding-left: 10px
 
 .icons
     display: flex
@@ -129,6 +143,7 @@ $color-orange: #F07835
     font-size: 72px
     position: relative
     margin-bottom: 15px
+    font-weight: bold
     &__hr
         position: absolute
         width: 75px

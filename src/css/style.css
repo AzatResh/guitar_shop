@@ -466,8 +466,24 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "_Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "_Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-family: "_Montserrat";
 }
 
 .container {
@@ -501,7 +517,7 @@ table {
 .main-section__first-ellipse {
   position: absolute;
   top: 106px;
-  right: -24px;
+  right: -36px;
 }
 .main-section__second-ellipse {
   position: absolute;
@@ -576,6 +592,9 @@ table {
   font-size: 20px;
   margin-bottom: 20px;
 }
+.right-wrapper__icons_box {
+  padding-left: 10px;
+}
 
 .icons {
   display: flex;
@@ -602,6 +621,7 @@ table {
   font-size: 72px;
   position: relative;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 .title__hr {
   position: absolute;
