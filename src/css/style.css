@@ -611,6 +611,9 @@ table {
   border: none;
   border: 1px solid black;
 }
+.title__hr_top {
+  bottom: 75px;
+}
 
 .buttons {
   display: flex;
@@ -744,4 +747,46 @@ table {
 .icons-item__img {
   width: 80px;
   margin-right: 10px;
+}
+
+.third-section {
+  position: relative;
+  min-height: 628px;
+  background: #DFDFDF;
+  overflow: hidden;
+  z-index: 0;
+}
+.third-section__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 113px;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.third-section__first-ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 88px;
+  left: 78px;
+}
+.third-section__second-ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 172px;
+  left: 9px;
+}
+.third-section__third-ellipse {
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  right: -270px;
 }/*# sourceMappingURL=style.css.map */

@@ -133,6 +133,8 @@ $color-orange: #F07835
         margin: 0
         border: none
         border: 1px solid black
+        &_top
+            bottom: 75px
     
 .buttons
     display: flex
@@ -240,3 +242,38 @@ $color-orange: #F07835
     &__img
         width: 80px
         margin-right: 10px
+
+.third-section
+    position: relative
+    min-height: 628px
+    background: #DFDFDF
+    overflow: hidden
+    z-index: 0
+    &__container
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding-left: 113px
+        padding-top: 30px
+        justify-content: space-between
+    &__right-wrapper
+        max-width: 480px
+    &__text
+        font-size: 18px
+        margin-bottom: 20px
+    &__first-ellipse
+        position: absolute
+        z-index: -1
+        top: 88px
+        left: 78px
+    &__second-ellipse
+        position: absolute
+        z-index: -1
+        top: 172px
+        left: 9px
+    &__third-ellipse
+        position: absolute
+        z-index: -1
+        top: -120px
+        right: -270px
