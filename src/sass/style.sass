@@ -13,7 +13,7 @@ $color-orange: #F07835
 
 .main-section
     position: relative
-    height: 800px
+    min-height: 800px
     background: #DFDFDF
     padding-top: 18px 
     overflow: hidden
@@ -173,3 +173,70 @@ $color-orange: #F07835
         &_big
             width: 183px
             height: 183px
+        &_white
+            background: #FFFFFF
+
+.second-section
+    min-height: 700px
+    &__container
+        position: relative
+        padding-top: 30px
+    &__title
+        margin-bottom: 40px
+    &__cards-block
+        display: flex
+        flex-direction: row
+        margin-bottom: 40px
+    &__cards-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__icons-block
+        display: flex
+        justify-content: space-evenly
+        &:last-child
+            margin-right: 0
+    &__first-ellipse
+        position: absolute
+        right: -68px
+        top: 61px
+        z-index: -1
+    &__second-ellipse
+        position: absolute
+        top: 360px
+        left: -105px
+        z-index: -1
+
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background-color: #CBCBCB
+    display: flex
+    align-items: flex-end
+    &__img
+        height: 335px
+    &__text
+        font-size: 36px
+        width: 270px
+        text-align: center
+        transform: rotate(90deg)
+        position: absolute
+        top: 143px
+        right: -40px
+    &_orange
+        background-color: $color-orange
+    &_blue
+        background-color: $color-blue
+
+.icons-item
+    display: inline-flex
+    align-items: center
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
+    &__img
+        width: 80px
+        margin-right: 10px
