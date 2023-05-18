@@ -492,6 +492,160 @@ html
 @media (max-width: 767px)
     .container
         width: 540px
+    .nav-menu
+        right: -100%
+        transition: 0.8s all
+        position: fixed
+        top: 0
+        height: 100vh
+        width: 30%
+        background: grey
+        z-index: 10
+        &__list
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            height: 100%
+        &__list-item
+            font-size: 20px
+            margin-right: 0
+    .hamburger
+        top: 40px
+        right: 30px
+        width: 30px
+        height: 20px
+        z-index: 11
+        position: fixed
+        span
+            width: 100%
+            height: 2px
+            display: block
+            background: black
+            margin-bottom: 5px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        height: 30px
+        top: 30px
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(12px) rotate(-45deg)
+            &:nth-child(2)
+                display: none 
+            &:nth-child(3)
+                transform: translateY(12px) rotate(45deg) 
+    .nav-menu_active
+        right: 0
+    .main-section
+        min-height: 550px
+        &__first-ellipse
+            top: 25px
+            right: -23px
+        &__second-ellipse
+            top: 450px
+            right: -50px
+    .left-wrapper
+        img
+            width: 527px
+        &__rectangle-blue
+            top: 76px
+            left: -23px
+            width: 333px
+            height: 158px
+        &__rectangle-orange
+            top: 71px
+            left: -12px
+            width: 383px
+            height: 158px
+        &__rectangle-grey
+            top: 97px
+            left: 23px
+            width: 343px
+            height: 158px
+    .right-wrapper
+        width: 356px
+        right: -15px
+        top: 25px
+        &__title
+            margin-bottom: 5px
+        &__text
+            font-size: 18px
+        &__icons_box
+            margin-bottom: 5px
+    .second-section
+        min-height: 415px
+        margin-bottom: 20px
+        &__container
+            padding-top: 15px
+        &__cards-block
+            margin-bottom: 20px
+        &__first-ellipse
+            top: 57px
+            right: -19px
+        &__second-ellipse
+            top: 200px
+            left: -22px
+        &__title
+            margin-bottom: 15px
+    .icons-item
+        &__img
+            width: 60px
+        &__text
+            font-size: 14px
+            span
+                font-size: 36px
+    .cards-item
+        width: 220px
+        height: 220px
+        margin-right: 20px
+        &__img
+            height: 200px
+        &__text
+            font-size: 24px
+            top: 85px
+            right: -78px
+    .third-section
+        min-height: 500px
+        &__container
+            padding-left: 50px
+            justify-content: start
+        &__left-title
+            display: none
+        &__third-ellipse
+            top: -60px
+            right: -80px
+        &__second-ellipse
+            top: 256px
+            width: 180px
+            left: 35px
+        &__first-ellipse
+            top: 184px
+            left: 121px
+        &__right-wrapper
+            width: 585px
+            max-width: 585px
+    .footer__img
+        width: 410px
+        bottom: 20px
+        left: -180px
+    .title
+        font-size: 64px
+    .ellipse
+        width: 170px
+        height: 170px
+        &__subtract 
+            width: 105.32px
+            height: 105.32px
+    .buttons
+        &__main-btn 
+            margin-right: 10px
+            width: 195px
+    .title__hr_top 
+        bottom: 63px
+        
+                
 
 @media (max-width: 575px)
     .container
