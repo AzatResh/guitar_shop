@@ -467,12 +467,14 @@ table {
 }
 
 @font-face {
+  font-display: swap;
   font-family: "_Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
+  font-display: swap;
   font-family: "_Montserrat";
   src: url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: bold;
